@@ -61,6 +61,8 @@ fn run() -> Result<(), failure::Error> {
     let stdout = io::stdout();
     let mut stdout = stdout.lock();
 
+    writeln!(stdout, " TIMESTAMP   EXCEPTION")?;
+
     let mut stream = Stream::new(reader, matches.is_present("follow"));
 
     const MAX: u32 = 1_000_000_000;

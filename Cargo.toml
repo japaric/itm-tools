@@ -1,0 +1,13 @@
+[package]
+authors = ["Jorge Aparicio <jorge@japaric.io>"]
+edition = "2018"
+name = "itm-tools"
+version = "0.1.0"
+
+[dependencies]
+clap = "2.32.0"
+exitfailure = "0.5.1"
+failure = "0.1.5"
+itm = { git = "https://github.com/rust-embedded/itm", branch = "stream" }
+rustc-demangle = "0.1.13"
+xmas-elf = "0.6.2"

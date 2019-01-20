@@ -187,6 +187,16 @@ $ excevt itm.bin
 
 ## PC sampling
 
+<p align="center">
+<img
+  alt="Profiling firmware"
+  src="assets/pcsampl.png"
+>
+<br>
+<em>Profiling firmware</em>
+</p>
+
+
 The ITM can also be configured to output periodic packets that contain snapshots
 of the program counter. These can be used to answer the question: where is my
 program spending most of its time? `pcsampl` can process the data and answer

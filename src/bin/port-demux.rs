@@ -32,7 +32,7 @@ fn run() -> Result<(), failure::Error> {
         .get_matches();
 
     let stdin;
-    let reader: Box<Read> = if let Some(file) = matches.value_of("FILE") {
+    let reader: Box<dyn Read> = if let Some(file) = matches.value_of("FILE") {
         Box::new(File::open(file)?)
     } else {
         stdin = io::stdin();

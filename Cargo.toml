@@ -8,6 +8,6 @@ version = "0.1.0"
 clap = "2.32.0"
 exitfailure = "0.5.1"
 failure = "0.1.5"
-itm = { git = "https://github.com/rust-embedded/itm", branch = "stream" }
+itm = { git = "https://github.com/rust-embedded/itm" }
 rustc-demangle = "0.1.13"
 xmas-elf = "0.6.2"
